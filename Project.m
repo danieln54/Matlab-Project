@@ -11,4 +11,4 @@ uniqueneighv = unique(neighv);
 uniqueneighc = unique(neighc);
 
 X = repmat(neighv,length(uniqueneighv),1);
-fwe
+
