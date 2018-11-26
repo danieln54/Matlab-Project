@@ -1,0 +1,13 @@
+load project
+
+figure('name','Map')
+mapdatac = [datac(:,4),datac(:,3)];
+mapdatav = [datav(:,3),datav(:,4)];
+
+mapdatac = cell2mat(mapdatac)
+mapdatac = round(mapdatac,2);
+
+worldmap([39.15 39.40],[-76.75 -76.5])
+
+scatterm(mapdatac(:,1),mapdatac(:,2),.0001,'.')
+scaleruler
